@@ -13,4 +13,4 @@ def get_item(name, message):
 
 
 if __name__ == '__main__':
-    uvicorn.run('hello:app', port=8000, host='127.0.0.1', reload=True)
+    uvicorn.run('hello:app', port=8000, host='127.3.5.1', reload=True)
