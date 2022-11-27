@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+import uvicorn
 
 app = FastAPI()
 
@@ -11,4 +11,5 @@ def root():
 def get_item(name, message):
     return f'Hello {name}! {message}!'
 
-
+if __name__ == '__main__':
+    uvicorn.run('hello:app', port=4561, host='127.0.0.1', reload=True)
