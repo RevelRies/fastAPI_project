@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get('/')
 def root():
-    return {'message': 'Hellow Word'}
+    return 'Special for Rekruto'
 
 @app.get('/url_name/')
 def get_item(name, message):
